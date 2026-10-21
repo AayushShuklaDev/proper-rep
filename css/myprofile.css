@@ -1,0 +1,399 @@
+```css
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7ff;
+    color: #222;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #74318f;
+    color: rgb(204, 23, 23);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7c5cff;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #7c5cff;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 70px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #17153b,
+        #302b63,
+        #7c5cff
+    );
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small-text {
+    color: #ffd166;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 28px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #ffd166;
+    color: #222;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.second-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+/* =========================
+   HERO BOX
+========================= */
+
+.hero-box {
+    width: 300px;
+    height: 300px;
+
+    background-color: white;
+    color: #17153b;
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background-image:url(../myimage.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    padding: 70px 10%;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #302b63;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+    display: flex;
+    gap: 25px;
+}
+
+.about-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    flex: 1;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    border-top: 5px solid #7c5cff;
+}
+
+.about-card h3 {
+    color: #7c5cff;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: white;
+
+    width: 210px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    border-bottom: 5px solid #00b894;
+}
+
+.skill-card h3 {
+    color: #00b894;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-container {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.project-card {
+    background-color: white;
+
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-number {
+    font-size: 40px;
+
+    color: #7c5cff;
+
+    font-weight: bold;
+}
+
+.project-card h3 {
+    font-size: 22px;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+
+/* Project Button */
+
+.project-card button,
+.contact-box button {
+    background-color: #7c5cff;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.project-card button:hover,
+.contact-box button:hover {
+    background-color: #302b63;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+    max-width: 600px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h3 {
+    color: #7c5cff;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #17153b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .about-box {
+        flex-direction: column;
+    }
+
+    .hero-box {
+        width: 250px;
+        height: 250px;
+    }
+}
+```
